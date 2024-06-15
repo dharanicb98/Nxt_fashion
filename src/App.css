@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg-image {
+  background-image: url("https://img.freepik.com/premium-photo/toy-shopping-trolley-with-colourful-packets_23-2147955541.jpg?w=740");
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content:center;
+  align-items: start;
+  align-self: center;
+  height: 100vh;
+  background-size: cover;
+  font-family: "Bree serif";
 }
 
-.App-link {
-  color: #61dafb;
+.bg-home{
+  background-image: url("https://img.freepik.com/premium-photo/photo-round-foggy-color-podium-product-presentation-fog-round-product-podium_873925-860954.jpg?w=360");
+  height: 100vh;
+  background-size: cover;
+  font-family: "Bree serif";
+  overflow-y: auto;
 }
 
-@keyframes App-logo-spin {
+
+.welcome_title{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: example 2s linear 0s infinite alternate;
+}
+
+@keyframes example {
   from {
-    transform: rotate(0deg);
+    width: 0;
   }
   to {
-    transform: rotate(360deg);
+    width: 100%;
   }
+}
+
+.star-rating {
+  display: inline-flex;
+  align-items: center;
+}
+
+.star-rating .filled-stars,
+.star-rating .half-star,
+.star-rating .empty-stars {
+  color: rgb(173, 173, 76);
+  text-shadow: 1px 1px 1px black;
+}
+
+.star-rating .ml-2 {
+  margin-left: 0.5rem;
+}
+
+.hide-scrollbar {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+  overflow: hidden;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Webkit browsers */
 }
